@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"/>
+    <title> Calculator via JavaScript</title>
+    <link rel="stylesheet" href="calculator.css">
+    </head>
+    <body>
+    <!-- <div class="container">
+        <div class="calculator">  
+         <div class="calculator_display">
+
+            <div class="container">
+                <div class="row phase1">
+                    <div class=" col-12 col-md-6 " style="text-align:right;">
+                           0
+                        </div>
+                    </div> 
+                 </div>          
+            
+
+            
+            <div class="container">
+                <div class="row phase2 ">
+                    <div class=" col-12 col-md-6  " style="text-align:right;">
+                           0
+                        </div>
+                    </div> 
+                 </div>    
+                 
+ <div class="container">  
+      <div class="row  phase3">                
+             
+   <div class="grid-container">
+      <div class="grid-item"><button class="button1">1</button></div>
+      <div class="grid-item"><button class="button1">2</button></div>
+    <div class="grid-item"><button class="button1">3</button></div>  
+    <div class="grid-item"><button class="button3">+</button></div>
+    <div class="grid-item"><button class="button1">4</button></div>
+    <div class="grid-item"><button class="button1">5</button></div>  
+    <div class="grid-item"><button class="button1">6</button></div>
+    <div class="grid-item"><button class="button3">-</button></div>
+    <div class="grid-item"><button class="button1">7</button></div>  
+     <div class="grid-item"><button class="button1">8</button></div>
+      <div class="grid-item"><button class="button1">9</button></div> 
+       <div class="grid-item"><button class="button3">*</button></div>  
+       <div class="grid-item"><button class="button1">0</button></div>  
+       <div class="grid-item"><button class="button1">.</button></div> 
+       <div class="grid-item"><button class="button1">~</button></div>  
+       <div class="grid-item"><button class="button3">/</button></div>
+       <div class="grid-item"><button class="button2">(</button></div>  
+       <div class="grid-item"><button class="button2">)</button></div>  
+       <div class="grid-item"><button class="button2">AC</button></div>  
+       <div class="grid-item"><button class="button2">=</button></div>     
+  
+  </div>
+  </div>
+</div> -->            
+<!-- 
+         <div class="calculator_keys">
+             <div class="container">
+                 <div class="row">
+                     <div class=" col-12 col-md-3">
+                         <button class="button1 btn btn-primary">1</button> 
+ 
+                          <button class="button1 btn btn-primary">2</button>
+ 
+                          <button class="button1 btn btn-primary">3</button>  
+
+                          <button class="button1 btn btn-warning">+</button>  
+                  </div>
+               </div> 
+            </div>
+
+ <div class="container">
+    <div class="row">
+        <div class=" col-12 col-md-3">
+               <button class="btn btn-primary">4</button>   
+
+               <button class="btn btn-primary">5</button>   
+
+               <button class="btn btn-primary">6</button>   
+
+               <button class="btn btn-warning">-</button>   
+        </div>
+    </div>
+ </div> 
+
+
+ <div class="container">
+    <div class="row">
+        <div class="col-12  col-md-3">
+
+               <button class="btn btn-primary">7</button>   
+
+               <button class="btn btn-primary">8</button>   
+
+               <button class="btn btn-primary">9</button>   
+
+               <button class="btn btn-warning">*</button>   
+            </div>
+        </div>
+     </div> 
+    
+     <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-3">
+
+               <button class="btn btn-primary">0</button>   
+
+               <button class="btn btn-primary">.</button>   
+
+               <button class="btn btn-primary">~</button>   
+
+               <button class="btn btn-primary">/</button>
+            </div>
+        </div>
+     </div> 
+
+     <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-3">
+               <button class="btn btn-danger">(</button>   
+
+               <button class="btn btn-danger">)</button>  
+               
+               <button class="btn btn-danger">AC</button>   
+               
+               <button class="btn btn-danger">=</button> 
+            </div>
+        </div>
+     </div>        
+               
+
+
+        </div>
+    </div>    
+</div> -->
+
+<div class="main">
+<table>
+    <tr><input type="text" id="input"></tr>
+    <tr>
+        <td><button onclick="number('1')">1</button></td>
+        <td><button onclick="number('2')">2</button></td>
+        <td><button onclick="number('3')">3</button></td>
+        <td><button onclick="number('+')">+</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="number('4')">4</button></td>
+        <td><button onclick="number('5')">5</button></td>
+        <td><button onclick="number('6')">6</button></td>
+        <td><button onclick="number('-')">-</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="number('7')">7</button></td>
+        <td><button onclick="number('8')">8</button></td>
+        <td><button onclick="number('9')">9</button></td>
+        <td><button onclick="number('*')">*</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="number(0)">0</button></td>
+        <td><button onclick="number('.')">.</button></td>
+        <td><button onclick="deleteChar()">~</button></td>
+        <td><button onclick="number('/')">/</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="number('(')">(</button></td>
+        <td><button onclick="number(')')">)</button></td>
+        <td><button onclick="clearResult()">C</button></td>
+        <td><button onclick="result()">=</button></td>
+    </tr>
+
+</table>
+</div>
+    <script src="calculator.js"></script>
+    </body>
+</html>
